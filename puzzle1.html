@@ -1,0 +1,280 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+var count=0;
+$(document).ready(function(){
+$("#one").click(function(){
+count++;
+var c=$("#one").text();
+var a=$("#two").text();
+var b=$("#four").text();
+if(a.length==0)
+{
+$("#one").text(a);
+$("#two").text(c);
+$("h2").text("MOVES:"+count);
+}
+else if(b.length==0)
+{
+$("#one").text(b);
+$("#four").text(c);
+$("h2").text("MOVES:"+count);
+}
+if($("#one").text()=="1"&&$("#two").text()=="2"&&$("#three").text()=="3"&&$("#four").text()=="4"&&$("#five").text()=="5"&&$("#six").text()=="6"&&$("#seven").text()=="7"&&$("#eight").text()=="8"&&$("#nine").text()=="")
+{
+alert("YOU WON");
+}
+});
+$("#two").click(function(){
+
+count++;
+var a=$("#one").text();
+var b=$("#three").text();
+var c=$("#five").text();
+var d=$("#two").text();
+if(a.length==0)
+{
+$("#one").text(d);
+$("#two").text(a);
+$("h2").text("MOVES:"+count);
+}
+else if(b.length==0)
+{
+$("#three").text(d);
+$("#two").text(b);
+$("h2").text("MOVES:"+count);
+}
+else if(c.length==0)
+{
+$("#five").text(d);
+$("#two").text(c);
+$("h2").text("MOVES:"+count);
+}
+if($("#one").text()=="1"&&$("#two").text()=="2"&&$("#three").text()=="3"&&$("#four").text()=="4"&&$("#five").text()=="5"&&$("#six").text()=="6"&&$("#seven").text()=="7"&&$("#eight").text()=="8"&&$("#nine").text()=="")
+{
+alert("YOU WON");
+}
+
+});
+$("#three").click(function(){
+count++;
+var c=$("#three").text();
+var a=$("#two").text();
+var b=$("#six").text();
+if(a.length==0)
+{
+$("#three").text(a);
+$("#two").text(c);
+$("h2").text("MOVES:"+count);
+}
+else if(b.length==0)
+{
+$("#three").text(b);
+$("#six").text(c);
+$("h2").text("MOVES:"+count);
+}
+if($("#one").text()=="1"&&$("#two").text()=="2"&&$("#three").text()=="3"&&$("#four").text()=="4"&&$("#five").text()=="5"&&$("#six").text()=="6"&&$("#seven").text()=="7"&&$("#eight").text()=="8"&&$("#nine").text()=="")
+{
+alert("YOU WON");
+}
+
+});
+
+
+
+$("#four").click(function(){
+count++;
+var a=$("#one").text();
+var b=$("#five").text();
+var c=$("#seven").text();
+var d=$("#four").text();
+if(a.length==0)
+{
+$("#one").text(d);
+$("#four").text(a);
+$("h2").text("MOVES:"+count);
+}
+else if(b.length==0)
+{
+$("#five").text(d);
+$("#four").text(b);
+$("h2").text("MOVES:"+count);
+}
+else if(c.length==0)
+{
+$("#seven").text(d);
+$("#four").text(c);
+$("h2").text("MOVES:"+count);
+}
+if($("#one").text()=="1"&&$("#two").text()=="2"&&$("#three").text()=="3"&&$("#four").text()=="4"&&$("#five").text()=="5"&&$("#six").text()=="6"&&$("#seven").text()=="7"&&$("#eight").text()=="8"&&$("#nine").text()=="")
+{
+alert("YOU WON");
+}
+
+});
+$("#five").click(function(){
+count++;
+var a=$("#two").text();
+var b=$("#four").text();
+var c=$("#six").text();
+var e=$("#eight").text()
+var d=$("#five").text();
+if(a.length==0)
+{
+$("#two").text(d);
+$("#five").text(a);
+$("h2").text("MOVES:"+count);
+}
+else if(b.length==0)
+{
+$("#four").text(d);
+$("#five").text(b);
+$("h2").text("MOVES:"+count);
+}
+else if(c.length==0)
+{
+$("#six").text(d);
+$("#five").text(c);
+$("h2").text("MOVES:"+count);
+}
+else if(e.length==0)
+{
+$("#eight").text(d);
+$("#five").text(e);
+$("h2").text("MOVES:"+count);
+}
+if($("#one").text()=="1"&&$("#two").text()=="2"&&$("#three").text()=="3"&&$("#four").text()=="4"&&$("#five").text()=="5"&&$("#six").text()=="6"&&$("#seven").text()=="7"&&$("#eight").text()=="8"&&$("#nine").text()=="")
+{
+alert("YOU WON");
+}
+
+});
+
+$("#six").click(function(){
+count++;
+var a=$("#five").text();
+var b=$("#three").text();
+var c=$("#nine").text();
+var d=$("#six").text();
+if(a.length==0)
+{
+$("#five").text(d);
+$("#six").text(a);
+$("h2").text("MOVES:"+count);
+}
+else if(b.length==0)
+{
+$("#three").text(d);
+$("#six").text(b);
+$("h2").text("MOVES:"+count);
+}
+else if(c.length==0)
+{
+$("#nine").text(d);
+$("#six").text(c);
+$("h2").text("MOVES:"+count);
+}
+if($("#one").text()=="1"&&$("#two").text()=="2"&&$("#three").text()=="3"&&$("#four").text()=="4"&&$("#five").text()=="5"&&$("#six").text()=="6"&&$("#seven").text()=="7"&&$("#eight").text()=="8"&&$("#nine").text()=="")
+{
+alert("YOU WON");
+}
+
+});
+$("#seven").click(function(){
+count++;
+var a=$("#four").text();
+var b=$("#eight").text();
+var d=$("#seven").text();
+if(a.length==0)
+{
+$("#four").text(d);
+$("#seven").text(a);
+$("h2").text("MOVES:"+count);
+}
+else if(b.length==0)
+{
+$("#eight").text(d);
+$("#seven").text(b);
+$("h2").text("MOVES:"+count);
+}
+if($("#one").text()=="1"&&$("#two").text()=="2"&&$("#three").text()=="3"&&$("#four").text()=="4"&&$("#five").text()=="5"&&$("#six").text()=="6"&&$("#seven").text()=="7"&&$("#eight").text()=="8"&&$("#nine").text()=="")
+{
+alert("YOU WON");
+}
+
+});
+$("#eight").click(function(){
+count++;
+var a=$("#seven").text();
+var b=$("#five").text();
+var c=$("#nine").text();
+var d=$("#eight").text();
+if(a.length==0)
+{
+$("#seven").text(d);
+$("#eight").text(a);
+$("h2").text("MOVES:"+count);
+}
+else if(b.length==0)
+{
+$("#five").text(d);
+$("#eight").text(b);
+$("h2").text("MOVES:"+count);
+}
+else if(c.length==0)
+{
+$("#nine").text(d);
+$("#eight").text(c);
+$("h2").text("MOVES:"+count);
+}
+if($("#one").text()=="1"&&$("#two").text()=="2"&&$("#three").text()=="3"&&$("#four").text()=="4"&&$("#five").text()=="5"&&$("#six").text()=="6"&&$("#seven").text()=="7"&&$("#eight").text()=="8"&&$("#nine").text()=="")
+{
+alert("YOU WON");
+}
+
+});
+$("#nine").click(function(){
+count++;
+var a=$("#eight").text();
+var b=$("#six").text();
+var d=$("#nine").text();
+if(a.length==0)
+{
+$("#eight").text(d);
+$("#nine").text(a);
+$("h2").text("MOVES:"+count);
+}
+else if(b.length==0)
+{
+$("#six").text(d);
+$("#nine").text(b);
+$("h2").text("MOVES:"+count);
+}
+if($("#one").text()=="1"&&$("#two").text()=="2"&&$("#three").text()=="3"&&$("#four").text()=="6"&&$("#five").text()=="5"&&$("#six").text()=="4"&&$("#seven").text()=="7"&&$("#eight").text()=="8"&&$("#nine").text()=="")
+{
+alert("YOU WON");
+}
+
+});
+
+});
+
+</script>
+</head>
+<body>
+<h1>Solve It!!!!</h1><br>
+<table><tr><td>
+<div id="one" style="width:150px;height:150px;border-style:solid;font-size:40px;position:relative;border-radius:7px 7px">1</div></td>
+<td><div id="two" style="width:150px;height:150px;border-style:solid;font-size:40px;position:relative;border-radius:7px 7px">7</div></td>
+<td><div id="three" style="width:150px;height:150px;border-style:solid;font-size:40px;position:relative;border-radius:7px 7px">3</div></td></tr><tr>
+<td><div id="four" style="width:150px;height:150px;border-style:solid;font-size:40px;position:relative;border-radius:7px 7px">5</div></td>
+<td><div id="five" style="width:150px;height:150px;border-style:solid;font-size:40px;position:relative;border-radius:7px 7px">8</div></td>
+<td><div id="six" style="width:150px;height:150px;border-style:solid;font-size:40px;position:relative;border-radius:7px 7px">6</div></td></tr><tr>
+<td><div id="seven" style="width:150px;height:150px;border-style:solid;font-size:40px;position:relative;border-radius:7px 7px">2</div></td>
+<td><div id="eight" style="width:150px;height:150px;border-style:solid;font-size:40px;position:relative;border-radius:7px 7px"></div></td>
+<td><div id="nine" style="width:150px;height:150px;border-style:solid;font-size:40px;position:relative;border-radius:7px 7px">4</div></td></tr></table>
+<h2>MOVES:0</h2>
+</body>
+</html>
